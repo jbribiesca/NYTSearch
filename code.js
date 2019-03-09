@@ -1,9 +1,12 @@
 // https://api.nytimes.com/svc/search/v2/articlesearch.json?q=election&api-key=Wg0SfSHkxKoSMxEpmAwGAg0vDhaQu9qg&begin_date=20180101&end_date=20190101
 
 $("button").on("click", function() {
+    console.log($("#begindate").val())
+
+    
     var query = $("#searchterm").val();
-    var begin_date = "&begin_date=20180101" + $("#begindate").val();
-    var end_date = "&end_date=20190101" +  + $("#enddate").val();
+    var begin_date = "&begin_date=" + $("#begindate").val();
+    var end_date = "&end_date=" +  + $("#enddate").val();
     var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=" +
       query + "&api-key=Wg0SfSHkxKoSMxEpmAwGAg0vDhaQu9qg" + begin_date + end_date;
 
