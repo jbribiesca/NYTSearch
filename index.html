@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+ <head>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   <!-- Bootstrap CSS -->
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+   <title>New York Times Search</title>
+ </head>
+ <body>
+  <!-- Jumbotron  -->
+  <div class= "container">
+   <div class="jumbotron" style="background-color: #20315A ; color: white;">
+    <h1 class="text-center">
+      <strong>
+        <i class="fa fa-newspaper-o"></i> New York Times Search</strong>
+    </h1>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+   <strong> Search Parameters: </strong>
+    </div>
+    <div class="card-body">
+      <h3> Search Term:</h3>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+      </div>
+        <input type="text" class="form-control" placeholder="" id="searchterm" aria-label="Example text with button addon" aria-describedby="button-addon1">
+      </div>
+      <h3> Number of Records to Retrieve: </h3>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+      </div>
+        <input type="text" class="form-control" placeholder="" id="limit" aria-label="Example text with button addon" aria-describedby="button-addon1">
+      </div>
+      <h3> Start Year:</h3>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+      </div>
+        <input type="date" class="form-control" placeholder="" id="begindate" aria-label="Example text with button addon" aria-describedby="button-addon1">
+      </div>
+      <h3> End Year:</h3>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+      </div>
+        <input type="date" class="form-control" placeholder="" id="enddate" aria-label="Example text with button addon" aria-describedby="button-addon1">
+      </div>
+
+      <button>Search</button>
+      </div>
+      <div></div>
+      <div class="card">
+
+          <!-- Top Article display -->
+          <div class="card-header">
+              <strong>
+                  <i class="fa fa-table"></i> Top Articles</strong>
+          </div>
+
+          <!-- Holds Pulled Articles -->
+          <div class="card-body" id="article-section">
+          </div>
+
+          
+      </div>
+
+    
+    
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+   <!-- Optional JavaScript -->
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   
+   <script src="code.js"></script>
+ </body>
+</html>
